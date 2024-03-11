@@ -1,0 +1,109 @@
+body {
+    font-family: 'Orbitron', sans-serif;
+    background-color: #0f0e13;
+    color: #00ffea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  /* General retrofuturistic styles */
+  .retro-radio {
+    border: 2px solid #00ffea;
+    border-radius: 8px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 4px 30px rgba(0, 255, 234, 0.1);
+    color: #00ffea;
+  }
+  
+  /* Mimic old radio displays */
+  .frequency-display {
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: 0 0 10px #00ffea, 0 0 20px #00ffea, 0 0 30px #00ffea;
+  }
+  
+  /* Style for buttons and sliders */
+  .button, .slider {
+    background-color: #00ffea;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 0 5px #00ffea, 0 0 10px #00ffea, 0 0 15px #00ffea, 0 0 20px #00ffea;
+  }
+  
+  .button:hover, .slider:hover {
+    background-color: #008CBA;
+  }
+  
+  /* Input fields styling */
+  input[type="checkbox"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #0e0e0e;
+    margin: 5px;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #00ffea;
+    border-radius: 4px;
+    display: inline-block;
+    position: relative;
+  }
+  
+  input[type="checkbox"]:checked {
+    background-color: #00ffea;
+  }
+  
+  input[type="checkbox"]:checked:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 2px;
+    left: 7px;
+    width: 6px;
+    height: 12px;
+    border: solid #0e0e0e;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+  }
+  
+  /* Slider customization */
+  input[type="range"] {
+    width: 100%;
+    height: 8px;
+    background: #00ffea;
+    border-radius: 5px;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
+  input[type="range"]::-webkit-slider-thumb {
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+  }
+  
+  input[type="range"]::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+  }
+  
